@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girls' Hostel Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Girls' Hostel Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#notices">Notices</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h2>Welcome to Our Hostel!</h2>
+            <p>Providing a safe, comfortable, and friendly environment for all our residents.</p>
+            <h3>Hostel Rules:</h3>
+            <ul>
+                <li>Quiet hours from 10 PM to 7 AM.</li>
+                <li>No male visitors allowed inside residential areas.</li>
+                <li>Keep your room tidy and clean.</li>
+                <li>Entry/Exit gate closure at 9 PM.</li>
+                <li>Respect your fellow residents and staff.</li>
+            </ul>
+        </section>
+
+        <section id="rooms" class="section-block">
+            <h2>Room Availability</h2>
+            <div id="room-list-container" class="room-grid">
+                <!-- Room cards will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="notices" class="section-block">
+            <h2>Latest Notices</h2>
+            <ul id="notice-list">
+                <li><span class="notice-date">2023-10-26:</span> Mandatory fire drill tomorrow at 10 AM.</li>
+                <li><span class="notice-date">2023-10-20:</span> Monthly cleaning schedule updated. Check notice board.</li>
+                <li><span class="notice-date">2023-10-15:</span> Guest speaker session on career guidance next week.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section-block">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><strong>Email:</strong> info@hostel.com</p>
+            <p><strong>Address:</strong> 123 Hostel Lane, City, Country</p>
+
+            <h3>Send us a message:</h3>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Girls' Hostel Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
